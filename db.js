@@ -2,11 +2,11 @@ const mysql = require('mysql2');
 
 // Use a pool for better performance and stability
 const pool = mysql.createPool({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-    port: process.env.DB_PORT || 26753,
+    host: haze420-mysql-rancerollyb-06e4.j.aivencloud.com,
+    user: avnadmin,
+    password: AVNS_3b0Vttsv3iYzYCi1Ir7,
+    database: defaultdb,
+    port: 26752,
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0,
