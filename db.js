@@ -1,3 +1,4 @@
+require('dotenv').config(); // Load the hidden variables
 const mysql = require('mysql2');
 
 const db = mysql.createConnection({
@@ -5,6 +6,7 @@ const db = mysql.createConnection({
     user: 'avnadmin',
     password: 'AVNS_0fdVtOSY7PUL0SXvGub',
     database: 'default'
+    port: 26753
 });
 
 db.connect(err => {
