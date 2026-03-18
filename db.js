@@ -2,15 +2,11 @@ const mysql = require('mysql2');
 
 // Use a pool for better performance and stability
 const pool = mysql.createPool({
-    host: haze420-mysql-rancerollyb-06e4.j.aivencloud.com,
-    user: avnadmin,
-    password: AVNS_3b0Vttsv3iYzYCi1Ir7,
-    database: defaultdb,
-    port: 26752,
-    waitForConnections: true,
-    connectionLimit: 10,
-    queueLimit: 0,
-    // Aiven MySQL usually requires SSL
+    host: 'haze420-mysql-rancerollyb-06e4.j.aivencloud.com', // Must have quotes!
+    user: 'avnadmin', 
+    password: 'YOUR_PASSWORD_HERE', 
+    database: 'defaultdb',
+    port: 26753,
     ssl: {
         rejectUnauthorized: false 
     }
